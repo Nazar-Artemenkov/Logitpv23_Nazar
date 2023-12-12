@@ -76,27 +76,25 @@ from math import *
 #print("^^ \"\" ^^")
 
 #9
-try:
-     a = int(input("Введите сторону А:"))
-     try:
-       b = int(input("Введите сторону B:"))
-       try:
-         c = int(input("Введите сторону С:"))
-         P = a + b + c
-         print(f"Периметр треугольника: {P}")
-       except :
-         print("viga muutujaga!")
-     except :
-      print("viga muutujaga!")
-except :
-    print("On vaja täisarv kasutada")
+#try:
+#     a = int(input("Введите сторону А:"))
+#     try:
+#       b = int(input("Введите сторону B:"))
+#       try:
+#         c = int(input("Введите сторону С:"))
+#         P = a + b + c
+#         print(f"Периметр треугольника: {P}")
+#       except :
+#         print("viga muutujaga!")
+#     except :
+#      print("viga muutujaga!")
+#except :
+#    print("On vaja täisarv kasutada")
 
-try:
-    c = int(input("Введите сторону С:"))
-except :
-    print("viga muutujaga!")
-
-
+#try:
+#    c = int(input("Введите сторону С:"))
+#except :
+#    print("viga muutujaga!")
 
 
 #10
