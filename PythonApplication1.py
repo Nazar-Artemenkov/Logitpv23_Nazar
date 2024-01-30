@@ -1,3 +1,141 @@
+#1
+
+#n = int(input("Введите число домов от 1 до 9: "))
+## Запрашиваем у пользователя количество домов.
+## Рисуем дом, повторяя каждую строку соответствующее количество раз.
+#for i in range(n):
+#    print("   ~~~~~   ", end="")
+#print()
+#for i in range(n):
+#    print("  /_____\\  ", end="")
+#print()
+#for i in range(n):
+#    print("  | []  |  ", end="")
+#print()
+#for i in range(n):
+#    print("    -----  ", end="")
+#print()
+
+
+
+#2
+
+
+# Hinnete klass 1
+clas1 = [90, 85, 88, 92, 78]
+# Hinnete klass 2
+clas2 = [87, 89, 76, 94, 80]
+# Arvutame keskmise hinde igas klassis
+avg1 = sum(clas1) / len(clas1)  # Klassi 1 keskmine hinne
+avg2 = sum(clas2) / len(clas2)  # Klassi 2 keskmine hinne
+# Väljastame tulemused
+print(f"Esimene klass: Keskmiselt {avg1}")
+print(f"Teine klass: Keskmiselt {avg2}")
+# Вывод результатов
+print(f"Keskmine hinne esimeses klassis: {avg1}")
+print(f"Keskmine hinne teises klassis: {avg2}")
+
+
+#3
+
+import random
+
+## Loome juhuslike hinnete nimekirja
+#hinded = [random.randint(60, 100) for _ in range(10)]
+## Initsialiseerime muutujad minimaalse ja maksimaalse hinnete jaoks
+#min_hinne = float('inf')  # Seame min_hinne väärtuseks lõpmatuse
+#max_hinne = float() 
+## Iga hinne võrreldakse min_hinne ja max_hinne'ga
+#for hinne in hinded:
+#    # Kui hinne on väiksem kui hetke min_hinne, siis uuendame min_hinne
+#    if hinne < min_hinne:
+#        min_hinne = hinne  
+#    # Kui hinne on suurem kui hetke max_hinne, siis uuendame max_hinne
+#    if hinne > max_hinne:
+#        max_hinne = hinne  
+## Väljastame tulemused
+#print(f"Otsene nimekiri hinnetest: {hinded}")
+#print(f"Minimaalne hinne: {min_hinne}")
+#print(f"Maksimaalne hinne: {max_hinne}")
+
+
+
+#5
+
+## Küsime kasutajalt x minimaalset, maksimaalset ja sammu
+#min_x = float(input("Sisestage x minimaalne väärtus: "))
+#max_x = float(input("Sisestage x maksimaalne väärtus: "))
+#samm = float(input("Sisestage samm: "))
+## Väljastame tabeli päise
+#print("   x   |   y   ")
+#print("----------------")
+## Itereerime x väärtuste kaudu, arvestades kasutaja sisendit
+#current_x = min_x
+#while current_x <= max_x:
+#    y = -0.5 * current_x + current_x  # Arvutame funktsiooni väärtuse
+#    print(f"{current_x:.1f}   |  {y:.2f}")
+#    current_x += samm
+
+
+
+
+
+
+print("*** ARVUMÄMGUD ***") 
+# Ввод целого числа от пользователя с обработкой ошибок
+while True:
+    try:
+        a = abs(int(input("Введите целое число => ")))
+        break
+    except ValueError:
+        print("Введите целое число")
+# Проверка, является ли введенное число нулем
+if a == 0:
+    print("Нулевое число не интересно")
+else:
+    # Инициализация переменных и уведомление пользователя
+    print("Определение четных и нечетных цифр в числе")
+    print()
+    c = b = a
+    even_count = 0
+    odd_count = 0
+    # Подсчет четных и нечетных цифр
+    while b > 0:
+        if b % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+        b = b // 10
+   # Вывод количества четных и нечетных цифр
+    print("Четные цифры:", even_count)
+    print("Нечетные цифры:", odd_count)
+    print()
+    # Переворот числа
+    print("*Переворот* числа")
+    print()
+    reversed_number = 0
+    while a > 0:
+        digit = a % 10
+        a = a // 10
+        reversed_number = reversed_number * 10 + digit
+    print("*Перевернутое* число", reversed_number)
+    print()
+    # Проверка гипотезы Коллатца
+    print("Проверка гипотезы Коллатца")
+    print()
+    if c % 2 == 0:
+        print("c - четное. Деление на 2.")
+    else:
+        print("c - нечетное. Умножение на 3, добавление 1, деление на 2.")
+    while c != 1:
+        if c % 2 == 0:
+            c = c // 2
+        else:
+            c = (3 * c + 1) // 2
+        print(c, end=" ")
+    print()
+    print("Гипотеза верна")
+
 #print("tere maailm!".center(75,"-"))
 #nimi=input("mis on sinu nimi on?").capitalize() #python->Python
 #print("tere" +nimi+ "!")
