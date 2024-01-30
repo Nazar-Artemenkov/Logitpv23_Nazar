@@ -108,7 +108,7 @@
 #    print("Нечетные цифры:", odd_count)
 #    print()
 #    # Переворот числа
-#    print("*Переворот* числа")
+#    print("*Переворот* числа") 
 #    print()
 #    reversed_number = 0
 #    while a > 0:
