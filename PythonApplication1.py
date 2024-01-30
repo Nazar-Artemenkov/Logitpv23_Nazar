@@ -26,7 +26,7 @@
 ## Hinnete klass 2
 #clas2 = [87, 89, 76, 94, 80]
 ## Arvutame keskmise hinde igas klassis
-#avg1 = sum(clas1) / len(clas1)  # Klassi 1 keskmine hinne
+#avg1 = sum(clas1) / len(clas1)  # Klassi 1 keskmine hinne 
 #avg2 = sum(clas2) / len(clas2)  # Klassi 2 keskmine hinne
 ## Väljastame tulemused
 #print(f"Esimene klass: Keskmiselt {avg1}")
