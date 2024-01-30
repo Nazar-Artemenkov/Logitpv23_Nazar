@@ -248,3 +248,52 @@ from math import *
 
 #kokku = kokku_maksta / P
 #print(f"kokku maksta: {kokku:.2f} euro")
+
+
+#try:
+#    s1 = float(input("введите длину первой стороны квадрата:"))
+#    s2 = float(input("введите длину первой стороны квадрата:"))
+#    if s1 == s2 :
+#        print("Это квадрат!")
+#    else :
+#        print("Это не квадрат!")
+#except :
+#    print("Гдето ошибка посмотрите тип как вы указали данные")
+
+
+
+#from random import *
+#from datetime import *
+#a=10
+#b=2.3
+#c="programma"
+#d="11111"
+#print(b.as_integer())
+#print(c.isalpha())
+#print(d.isdecimal())
+
+print("Tere! olen sinu uus sõber - Python!")
+nimi = input("Sisestage oma nimi: ")
+print(nimi + ", oi kui ilus nimi!")
+vastus = input((nimi + "!Kas leian Sinu keha indeksi? 0-ei, 1-jah =>"))
+if vastus == "1":
+    pikkus = float(input("sisestage oma pikkus meetrites: "))
+    mass = float(input("Sisestage oma kaal kilogrammides: "))
+    indeks = mass / (0.01 * pikkus) ** 2
+    print(nimi + "Sinu keha indeks on: {:.1f}".format(indeks))
+    if indeks < 16:
+        print("Tervisele ohtlik alakaal")
+    elif 16 <= indeks< 19:
+        print("Alakaal")
+    elif 19 <= indeks < 25:
+        print("Normaalkaal")
+    elif 25 <= indeks < 30:
+        print("Ülekaal")
+    elif 30 <= indeks <35:
+        print("Rasvumine")
+    elif 35 <= indeks < 40:
+        print("Tugev rasvumine")
+    else:
+        print("Tervisele ohtlik rasvumine")
+else:
+    print("Aitah, et külastasid seda programmi!")
