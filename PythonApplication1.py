@@ -1,77 +1,77 @@
 #1
 
-#n = int(input("Введите число домов от 1 до 9: "))
-## Запрашиваем у пользователя количество домов.
-## Рисуем дом, повторяя каждую строку соответствующее количество раз.
-#for i in range(n):
-#    print("   ~~~~~   ", end="")
-#print()
-#for i in range(n):
-#    print("  /_____\\  ", end="")
-#print()
-#for i in range(n):
-#    print("  | []  |  ", end="")
-#print()
-#for i in range(n):
-#    print("    -----  ", end="")
-#print()
+n = int(input("Введите число домов от 1 до 9: "))
+# Запрашиваем у пользователя количество домов.
+# Рисуем дом, повторяя каждую строку соответствующее количество раз.
+for i in range(n):
+    print("   ~~~~~   ", end="")
+print()
+for i in range(n):
+    print("  /_____\\  ", end="")
+print()
+for i in range(n):
+    print("  | []  |  ", end="")
+print()
+for i in range(n):
+    print("    -----  ", end="")
+print()
 
 
 
 #2
 
 
-## Hinnete klass 1
-#clas1 = [90, 85, 88, 92, 78]
-## Hinnete klass 2
-#clas2 = [87, 89, 76, 94, 80]
-## Arvutame keskmise hinde igas klassis
-#avg1 = sum(clas1) / len(clas1)  # Klassi 1 keskmine hinne 
-#avg2 = sum(clas2) / len(clas2)  # Klassi 2 keskmine hinne
-## Väljastame tulemused
-#print(f"Esimene klass: Keskmiselt {avg1}")
-#print(f"Teine klass: Keskmiselt {avg2}")
+# Hinnete klass 1
+clas1 = [90, 85, 88, 92, 78]
+# Hinnete klass 2
+clas2 = [87, 89, 76, 94, 80]
+# Arvutame keskmise hinde igas klassis
+avg1 = sum(clas1) / len(clas1)  # Klassi 1 keskmine hinne 
+avg2 = sum(clas2) / len(clas2)  # Klassi 2 keskmine hinne
+# Väljastame tulemused
+print(f"Esimene klass: Keskmiselt {avg1}")
+print(f"Teine klass: Keskmiselt {avg2}")
 
 
 #3
 
-#import random
+import random
 
-## Loome juhuslike hinnete nimekirja
-#hinded = [random.randint(60, 100) for _ in range(10)]
-## Initsialiseerime muutujad minimaalse ja maksimaalse hinnete jaoks
-#min_hinne = float('inf')  # Seame min_hinne väärtuseks lõpmatuse
-#max_hinne = float() 
-## Iga hinne võrreldakse min_hinne ja max_hinne'ga
-#for hinne in hinded:
-#    # Kui hinne on väiksem kui hetke min_hinne, siis uuendame min_hinne
-#    if hinne < min_hinne:
-#        min_hinne = hinne  
-#    # Kui hinne on suurem kui hetke max_hinne, siis uuendame max_hinne
-#    if hinne > max_hinne:
-#        max_hinne = hinne  
-## Väljastame tulemused
-#print(f"Otsene nimekiri hinnetest: {hinded}")
-#print(f"Minimaalne hinne: {min_hinne}")
-#print(f"Maksimaalne hinne: {max_hinne}")
+# Loome juhuslike hinnete nimekirja
+hinded = [random.randint(60, 100) for _ in range(10)]
+# Initsialiseerime muutujad minimaalse ja maksimaalse hinnete jaoks
+min_hinne = float('inf')  # Seame min_hinne väärtuseks lõpmatuse
+max_hinne = float() 
+# Iga hinne võrreldakse min_hinne ja max_hinne'ga
+for hinne in hinded:
+    # Kui hinne on väiksem kui hetke min_hinne, siis uuendame min_hinne
+    if hinne < min_hinne:
+        min_hinne = hinne  
+    # Kui hinne on suurem kui hetke max_hinne, siis uuendame max_hinne
+    if hinne > max_hinne:
+        max_hinne = hinne  
+# Väljastame tulemused
+print(f"Otsene nimekiri hinnetest: {hinded}")
+print(f"Minimaalne hinne: {min_hinne}")
+print(f"Maksimaalne hinne: {max_hinne}")
 
 
 
 #5
 
-## Küsime kasutajalt x minimaalset, maksimaalset ja sammu
-#min_x = float(input("Sisestage x minimaalne väärtus: "))
-#max_x = float(input("Sisestage x maksimaalne väärtus: "))
-#samm = float(input("Sisestage samm: "))
-## Väljastame tabeli päise
-#print("   x   |   y   ")
-#print("----------------")
-## Itereerime x väärtuste kaudu, arvestades kasutaja sisendit
-#current_x = min_x
-#while current_x <= max_x:
-#    y = -0.5 * current_x + current_x  # Arvutame funktsiooni väärtuse
-#    print(f"{current_x:.1f}   |  {y:.2f}")
-#    current_x += samm
+# Küsime kasutajalt x minimaalset, maksimaalset ja sammu
+min_x = float(input("Sisestage x minimaalne väärtus: "))
+max_x = float(input("Sisestage x maksimaalne väärtus: "))
+samm = float(input("Sisestage samm: "))
+# Väljastame tabeli päise
+print("   x   |   y   ")
+print("----------------")
+# Itereerime x väärtuste kaudu, arvestades kasutaja sisendit
+current_x = min_x
+while current_x <= max_x:
+    y = -0.5 * current_x + current_x  # Arvutame funktsiooni väärtuse
+    print(f"{current_x:.1f}   |  {y:.2f}")
+    current_x += samm
 
 
 
